@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques 15</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="test">This is JQuery exercise</h1>
+    <h3>Fetching API response.....</h3>
+
+    <script>
+        const popular_url = `https://api.themoviedb.org/3/movie/popular?api_key=3b64ac412725369ae963817a7514e443`;
+        $.get(popular_url,function(data,status){
+            console.log(status)
+            console.log(data);
+        })
+    </script>
+</body>
+</html>

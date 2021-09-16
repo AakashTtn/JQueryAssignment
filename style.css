@@ -1,0 +1,23 @@
+.load{
+    color: blue;
+}
+
+.con{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+}
+.con li{
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.con13{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 10px;
+}
+
+.dropdown{
+    display: none;
+}

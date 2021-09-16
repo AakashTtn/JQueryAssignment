@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques 16</title>
+    <link rel="stylesheet" href="style16.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is jquery exercise</h1>
+
+    <div class="container">
+        <ul>
+            <li><span>X</span> Go to gym</li>
+            <li><span>X</span> Go to market</li>
+            <li><span>X</span> Go to work</li>
+        </ul>
+    </div>
+
+    <script>
+        $('document').ready(function(){
+            $('ul li span').on('click', function(event){
+                $(this).parent().remove();
+                event.stopPropagation();
+            })
+        })
+    </script>
+</body>
+</html>

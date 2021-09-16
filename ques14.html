@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques 14</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="test">This is JQuery exercise</h1>
+
+    <table BORDER="2">
+        <tr>
+            <td class="cell1">20</td>
+            <td class="cell1">09</td>
+            <td class="cell1">16</td>
+        </tr>
+        <tr>
+            <td class="cell1">27</td>
+            <td class="cell1">07</td>
+            <td class="cell1">18</td>
+        </tr>
+    </table>
+    <script>
+        $('document').ready(function(){
+            $('.cell1').each(function(i, n) {
+                if($(n).text()>10) 
+                $(n).css('color', 'green');
+            });
+        })
+    </script>
+</body>
+</html>

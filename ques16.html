@@ -13,17 +13,22 @@
 
     <div class="container">
         <ul>
-            <li><span>X</span> Go to gym</li>
-            <li><span>X</span> Go to market</li>
-            <li><span>X</span> Go to work</li>
+            <li><button>X</button> Go to market</li>
+            <li><button>X</button> Go to gym</li>
+            <li><button>X</button> Go to work</li>
         </ul>
     </div>
 
     <script>
         $('document').ready(function(){
-            $('ul li span').on('click', function(event){
-                $(this).parent().remove();
-                event.stopPropagation();
+            $('ul li button').on('click',function(){
+                $(this).addClass("del");
+                $.ajax({
+                    url:'https://jsonplaceholder.typicode.com/todos/1',
+                    success:function(result){
+                        $('.del').parent().remove()
+                    }
+                })
             })
         })
     </script>
